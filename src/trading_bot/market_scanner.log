@@ -1,0 +1,124 @@
+2026-09-27 09:51:49,696 - INFO - SIE.DE (Allemagne) exclu : Volume moyen insuffisant (46161).
+2026-09-27 09:51:49,968 - INFO - Résultats exportés dans scanner_results.csv
+2026-09-27 10:27:34,949 - INFO - SIE.DE (Allemagne) exclu : Volume moyen insuffisant (46161).
+2026-09-27 10:27:35,111 - INFO - Résultats exportés dans scanner_results.csv
+2026-09-27 10:38:14,664 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-27 10:38:14,767 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-27 10:38:14,872 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-27 10:38:14,971 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-27 10:38:15,071 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-27 10:40:37,683 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-27 10:40:37,813 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-27 10:40:37,899 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-27 10:40:38,038 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-27 10:40:38,134 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-27 10:47:32,681 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-27 10:47:32,793 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-27 10:47:32,879 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-27 10:47:32,970 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-27 10:47:33,124 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-27 12:41:02,923 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-27 12:41:03,028 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-27 12:41:03,137 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-27 12:41:03,252 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-27 12:41:03,357 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-27 12:42:57,303 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-27 12:42:57,418 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-27 12:42:57,543 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-27 12:42:57,637 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-27 12:42:57,750 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-29 21:19:22,704 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-29 21:19:22,811 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-29 21:19:22,918 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-29 21:19:22,998 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-29 21:19:23,071 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-29 21:21:14,965 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-29 21:21:15,065 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-29 21:21:15,165 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-29 21:21:15,261 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-29 21:21:15,329 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-09-29 21:43:04,793 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-09-29 21:43:04,893 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-09-29 21:43:04,974 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-09-29 21:43:05,076 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-09-29 21:43:05,141 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 06:31:07,945 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 06:31:08,032 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 06:31:08,102 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 06:31:08,215 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 06:31:08,321 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 06:32:04,993 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 06:32:05,096 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 06:32:05,193 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 06:32:05,265 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 06:32:05,370 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 06:41:22,599 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 06:41:22,697 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 06:41:22,760 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 06:41:22,861 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 06:41:22,957 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 06:43:43,203 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 06:43:43,278 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 06:43:43,387 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 06:43:43,466 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 06:43:43,562 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 07:08:11,700 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 07:08:11,800 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 07:08:11,867 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 07:08:11,939 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 07:08:12,015 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 07:09:05,904 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 07:09:06,014 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 07:09:06,115 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 07:09:06,191 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 07:09:06,267 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 07:18:25,747 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 07:18:25,832 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 07:18:25,912 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 07:18:25,994 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 07:18:26,129 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 07:52:46,146 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 07:52:46,248 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 07:52:46,325 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 07:52:46,422 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 07:52:46,497 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-01 08:34:49,596 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-01 08:34:49,672 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-01 08:34:49,747 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-01 08:34:49,841 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-01 08:34:49,916 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-08 05:40:04,389 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-08 05:40:04,490 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-08 05:40:04,567 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-08 05:40:04,654 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-08 05:40:04,751 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-08 05:44:16,693 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-08 05:44:16,955 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-08 05:44:17,247 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-08 05:44:17,431 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-08 05:44:17,619 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-08 06:16:06,953 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-08 06:16:07,024 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-08 06:16:07,115 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-08 06:16:07,205 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-08 06:16:07,280 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-08 06:37:58,838 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-08 06:37:58,937 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-08 06:37:59,013 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-08 06:37:59,085 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-08 06:37:59,161 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-09 07:27:07,887 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-09 07:27:07,987 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-09 07:27:08,078 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-09 07:27:08,179 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-09 07:27:08,283 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-10 05:51:27,876 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-10 05:51:28,010 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-10 05:51:28,112 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-10 05:51:28,218 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-10 05:51:28,297 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden
+2026-10-10 06:09:45,794 - ERROR - Erreur CAC 40: HTTP Error 403: Forbidden
+2026-10-10 06:09:45,886 - ERROR - Erreur DAX: HTTP Error 403: Forbidden
+2026-10-10 06:09:45,986 - ERROR - Erreur S&P 500: HTTP Error 403: Forbidden
+2026-10-10 06:09:46,058 - ERROR - Erreur NASDAQ 100: HTTP Error 403: Forbidden
+2026-10-10 06:09:46,142 - ERROR - Erreur FTSE 100: HTTP Error 403: Forbidden

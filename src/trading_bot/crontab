@@ -1,0 +1,1 @@
+30 22 * * 1-5 export TELEGRAM_BOT_TOKEN="8405354536:AAHRG8LWXRMntv_FTlhafzeZ_888HzgvkV8" TELEGRAM_CHAT_ID="5370959021438146805"; /usr/bin/python3 /home/sergengue/trading_bot/src/trading_bot/scanner_engine.py && /usr/bin/python3 /home/sergengue/trading_bot/src/trading_bot/telegram_bot.py >> /home/sergengue/trading_bot/src/trading_bot/bot.log 2>&1

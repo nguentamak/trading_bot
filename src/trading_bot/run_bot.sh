@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# 1. Variables Telegram
+export TELEGRAM_BOT_TOKEN="8405354536:AAHRG8LWXRMntv_FTlhafzeZ_888HzgvkV8"
+export TELEGRAM_CHAT_ID="8701571717"  # Remplace par ton vrai Chat ID complet
+
+# 2. Utilisation directe du Python de l'environnement virtuel (plus fiable pour cron)
+# Remplace par le chemin exact retourné par la commande 'which python'
+VENV_PYTHON="/home/sergengue/trading_bot/.venv/bin/python"
+
+# 3. Lancer les scripts avec le python de l'environnement
+$VENV_PYTHON /home/sergengue/trading_bot/src/trading_bot/scanner_engine.py && $VENV_PYTHON /home/sergengue/trading_bot/src/trading_bot/telegram_bot.py >> /home/sergengue/trading_bot/src/trading_bot/bot.log 2>&1

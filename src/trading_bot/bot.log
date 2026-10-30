@@ -1,0 +1,175 @@
+❌ Échec envoi Telegram : Bad Request: chat not found
+❌ Échec envoi Telegram : Bad Request: chat not found
+❌ Échec envoi Telegram : Bad Request: chat not found
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/indexes/base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/src/trading_bot/telegram_bot.py", line 150, in <module>
+    notify_top_setups()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sergengue/trading_bot/src/trading_bot/telegram_bot.py", line 120, in notify_top_setups
+    signal = row["Signal"]
+             ~~~^^^^^^^^^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/series.py", line 959, in __getitem__
+    return self._get_value(key)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/series.py", line 1046, in _get_value
+    loc = self.index.get_loc(label)
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Signal'
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/indexes/base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Stop_Loss'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/src/trading_bot/telegram_bot.py", line 150, in <module>
+    notify_top_setups()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sergengue/trading_bot/src/trading_bot/telegram_bot.py", line 125, in notify_top_setups
+    sl = row["Stop_Loss"]
+         ~~~^^^^^^^^^^^^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/series.py", line 959, in __getitem__
+    return self._get_value(key)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/series.py", line 1046, in _get_value
+    loc = self.index.get_loc(label)
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Stop_Loss'
+✅ Notification Telegram envoyée avec succès !
+❌ Échec envoi Telegram : {"ok":false,"error_code":400,"description":"Bad Request: message is too long"}
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+✅ Notification Telegram envoyée avec succès !
+[2026-10-15 05:31:51] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-15 05:31:51] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-15 06:30:05] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-15 06:30:05] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-15 07:26:45] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-15 18:31:30] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-16 04:10:44] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-16 05:43:47] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-16 22:31:42] [INFO] ✅ Notification Telegram envoyée avec succès !
+--- Lancement du bilan hebdomadaire PEA à Fri Oct 16 23:41:21 CEST 2026 ---
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connection.py", line 246, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8405354536:AAHRG8LWXRMntv_FTlhafzeZ_888HzgvkV8/sendMessage (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sergengue/trading_bot/src/trading_bot/weekly_summary.py", line 40, in <module>
+    calculate_weekly_skimming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sergengue/trading_bot/src/trading_bot/weekly_summary.py", line 37, in calculate_weekly_skimming
+    send_telegram_message(message)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/sergengue/trading_bot/src/trading_bot/weekly_summary.py", line 11, in send_telegram_message
+    response = requests.post(url, json=payload)
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/sergengue/trading_bot/.venv/lib/python3.14/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8405354536:AAHRG8LWXRMntv_FTlhafzeZ_888HzgvkV8/sendMessage (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno -3] Temporary failure in name resolution)"))
+[2026-10-26 08:27:06] [INFO] ✅ Notification Telegram envoyée avec succès !
+--- Lancement du bilan hebdomadaire PEA à Mon Oct 26 08:32:01 CET 2026 ---
+✅ Récapitulatif hebdomadaire envoyé avec succès !
+[2026-10-29 17:04:52] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-29 21:54:22] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-29 22:31:18] [INFO] ✅ Notification Telegram envoyée avec succès !
