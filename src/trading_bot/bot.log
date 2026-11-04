@@ -173,3 +173,6 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org'
 [2026-10-29 17:04:52] [INFO] ✅ Notification Telegram envoyée avec succès !
 [2026-10-29 21:54:22] [INFO] ✅ Notification Telegram envoyée avec succès !
 [2026-10-29 22:31:18] [INFO] ✅ Notification Telegram envoyée avec succès !
+[2026-10-30 22:31:25] [INFO] ✅ Notification Telegram envoyée avec succès !
+--- Lancement du bilan hebdomadaire PEA à Fri Oct 30 23:00:01 CET 2026 ---
+✅ Récapitulatif hebdomadaire envoyé avec succès !
