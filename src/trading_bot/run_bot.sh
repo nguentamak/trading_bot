@@ -9,4 +9,5 @@ export TELEGRAM_CHAT_ID="8701571717"  # Remplace par ton vrai Chat ID complet
 VENV_PYTHON="/home/sergengue/trading_bot/.venv/bin/python"
 
 # 3. Lancer les scripts avec le python de l'environnement
-$VENV_PYTHON /home/sergengue/trading_bot/src/trading_bot/scanner_engine.py && $VENV_PYTHON /home/sergengue/trading_bot/src/trading_bot/telegram_bot.py >> /home/sergengue/trading_bot/src/trading_bot/bot.log 2>&1
+# $VENV_PYTHON /home/sergengue/trading_bot/src/trading_bot/scanner_engine.py && $VENV_PYTHON /home/sergengue/trading_bot/src/trading_bot/telegram_bot.py >> /home/sergengue/trading_bot/src/trading_bot/bot.log 2>&1
+python scanner_engine.py && python telegram_bot.py >> bot.log 2>&1
