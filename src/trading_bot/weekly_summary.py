@@ -7,8 +7,7 @@ from alpaca.trading.enums import TimeFrame
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# Initialisation du client Alpaca (récupère automatiquement ALPACA_API_KEY et ALPACA_SECRET_KEY depuis l'environnement)
-# Mettez paper=False si vous êtes en production (live trading)
+# Initialisation du client Alpaca (récupère automatiquement les clés depuis l'environnement)
 IS_PAPER = os.getenv("ALPACA_PAPER", "True").lower() == "true"
 trading_client = TradingClient(
     api_key=os.getenv("ALPACA_API_KEY"),
@@ -32,7 +31,6 @@ def send_telegram_message(text):
 def get_alpaca_weekly_profit():
     """Récupère le profit/perte net(te) de la semaine via l'historique du portefeuille Alpaca."""
     try:
-        # Requête de l'historique sur 1 semaine (période '1W')
         params = GetPortfolioHistoryRequest(
             period="1W",
             timeframe=TimeFrame.Day,
@@ -40,7 +38,6 @@ def get_alpaca_weekly_profit():
         )
         history = trading_client.get_portfolio_history(params)
         
-        # history.profit_loss est une liste des profits/pertes cumulés sur la période
         if history.profit_loss and len(history.profit_loss) > 0:
             weekly_profit = float(history.profit_loss[-1])
             return weekly_profit
@@ -50,10 +47,8 @@ def get_alpaca_weekly_profit():
         return 0.0
 
 def calculate_weekly_skimming():
-    # --- RÉCUPÉRATION ALPACA ---
     weekly_profit = get_alpaca_weekly_profit()
     
-    # Sécurité : Si la semaine est négative ou nulle, pas de skimming
     if weekly_profit <= 0:
         message = (
             f"📊 *Bilan Hebdomadaire - Stratégie de Skimming*\n\n"
@@ -63,11 +58,9 @@ def calculate_weekly_skimming():
         send_telegram_message(message)
         return
 
-    # --- RÈGLE DES 50% POUR LE PEA ---
     transfer_to_pea = weekly_profit * 0.50
     reinvest_trading = weekly_profit * 0.50
 
-    # --- CONSTRUCTION DU MESSAGE ---
     message = (
         f"📊 *Bilan Hebdomadaire - Stratégie de Skimming*\n\n"
         f"💰 Profit net de la semaine : *+{weekly_profit:.2f} $*\n\n"
