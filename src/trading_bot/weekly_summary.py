@@ -28,6 +28,8 @@ def send_telegram_message(text):
     except requests.exceptions.RequestException as e:
         print(f"⚠️ Avertissement : Impossible d'envoyer la notification Telegram (Problème réseau/DNS) : {e}")
 
+import traceback
+
 def get_alpaca_weekly_profit():
     """Récupère le profit/perte net(te) de la semaine via l'historique du portefeuille Alpaca."""
     try:
@@ -43,7 +45,8 @@ def get_alpaca_weekly_profit():
             return weekly_profit
         return 0.0
     except Exception as e:
-        print(f"⚠️ Erreur lors de la récupération des données Alpaca : {e}")
+        print(f"⚠️ Erreur détaillée Alpaca : {e}")
+        traceback.print_exc()  # Affiche toute la pile d'exécution pour le debug
         return 0.0
 
 def calculate_weekly_skimming():
