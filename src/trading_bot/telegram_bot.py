@@ -16,20 +16,32 @@ logging.basicConfig(
 )
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+# Récupération et découpage des différents Chat IDs séparés par des virgules
+TELEGRAM_CHAT_IDS_ENV = os.getenv("TELEGRAM_CHAT_ID", "")
+CHAT_IDS = [chat_id.strip() for chat_id in TELEGRAM_CHAT_IDS_ENV.split(",") if chat_id.strip()]
 
 def send_telegram_message(text):
-    """Envoie un message via l'API Telegram"""
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "Markdown", "disable_web_page_preview": True}
-    try:
-        response = requests.post(url, json=payload, timeout=10)
-        if response.status_code != 200:
-            logging.error(f"❌ Échec envoi Telegram : {response.text}")
-        else:
-            logging.info("✅ Notification Telegram envoyée avec succès !")
-    except Exception as e:
-        logging.error(f"❌ Erreur réseau Telegram : {e}")
+    """Envoie un message via l'API Telegram à tous les destinataires configurés"""
+    if not TELEGRAM_BOT_TOKEN:
+        logging.error("❌ TELEGRAM_BOT_TOKEN manquant dans l'environnement !")
+        return
+    
+    if not CHAT_IDS:
+        logging.error("❌ Aucun TELEGRAM_CHAT_ID configuré !")
+        return
+
+    for chat_id in CHAT_IDS:
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+        payload = {"chat_id": chat_id, "text": text, "parse_mode": "Markdown", "disable_web_page_preview": True}
+        try:
+            response = requests.post(url, json=payload, timeout=10)
+            if response.status_code != 200:
+                logging.error(f"❌ Échec envoi Telegram pour {chat_id} : {response.text}")
+            else:
+                logging.info(f"✅ Notification Telegram envoyée avec succès à {chat_id} !")
+        except Exception as e:
+            logging.error(f"❌ Erreur réseau Telegram pour {chat_id} : {e}")
 
 def notify_top_setups():
     """Lit le fichier CSV et envoie les résultats sur Telegram en tronçonnant si le message est trop long"""
