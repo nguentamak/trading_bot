@@ -6,6 +6,9 @@ on:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 1. Crucial : donne le droit au bot GitHub de modifier et pousser sur le dépôt
+
     steps:
       - name: 📥 Check out repository
         uses: actions/checkout@v4
@@ -31,3 +34,17 @@ jobs:
           cd src/trading_bot
           chmod +x run_bot.sh
           ./run_bot.sh
+
+      - name: 🔄 Commit and push updated scanner results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Ajoute le fichier CSV généré par le bot (ajustez le chemin si le CSV est dans src/trading_bot/)
+          git add scanner_results.csv || git add src/trading_bot/scanner_results.csv
+          
+          # Ne commite que s'il y a de réels changements (évite une erreur si le fichier est inchangé)
+          git diff --staged --quiet || git commit -m "chore: update scanner results CSV automatically [skip ci]"
+          
+          # Pousse les modifications sur la branche principale
+          git push
