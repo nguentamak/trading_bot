@@ -40,8 +40,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Ajoute le fichier CSV généré par le bot (ajustez le chemin si le CSV est dans src/trading_bot/)
-          git add scanner_results.csv || git add src/trading_bot/scanner_results.csv
+          # Si le fichier a été généré dans src/trading_bot/, on le copie à la racine pour Streamlit et Git
+          if [ -f src/trading_bot/scanner_results.csv ]; then
+            cp src/trading_bot/scanner_results.csv ./scanner_results.csv
+          fi
+          
+          # Ajoute le fichier CSV à la racine
+          git add scanner_results.csv
           
           # Ne commite que s'il y a de réels changements (évite une erreur si le fichier est inchangé)
           git diff --staged --quiet || git commit -m "chore: update scanner results CSV automatically [skip ci]"
