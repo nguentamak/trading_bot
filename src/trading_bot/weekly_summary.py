@@ -2,12 +2,10 @@ import os
 import requests
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import GetPortfolioHistoryRequest
-from alpaca.trading.enums import TimeFrame
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# Initialisation du client Alpaca (récupère automatiquement les clés depuis l'environnement)
 IS_PAPER = os.getenv("ALPACA_PAPER", "True").lower() == "true"
 trading_client = TradingClient(
     api_key=os.getenv("ALPACA_API_KEY"),
@@ -26,16 +24,14 @@ def send_telegram_message(text):
         else:
             print("✅ Récapitulatif hebdomadaire envoyé avec succès !")
     except requests.exceptions.RequestException as e:
-        print(f"⚠️ Avertissement : Impossible d'envoyer la notification Telegram (Problème réseau/DNS) : {e}")
-
-import traceback
+        print(f"⚠️ Avertissement : Impossible d'envoyer la notification Telegram : {e}")
 
 def get_alpaca_weekly_profit():
     """Récupère le profit/perte net(te) de la semaine via l'historique du portefeuille Alpaca."""
     try:
         params = GetPortfolioHistoryRequest(
             period="1W",
-            timeframe=TimeFrame.Day,
+            timeframe="1D",  # Passage direct de la chaîne au lieu de l'énumération
             extended_hours=True
         )
         history = trading_client.get_portfolio_history(params)
@@ -46,7 +42,6 @@ def get_alpaca_weekly_profit():
         return 0.0
     except Exception as e:
         print(f"⚠️ Erreur détaillée Alpaca : {e}")
-        traceback.print_exc()  # Affiche toute la pile d'exécution pour le debug
         return 0.0
 
 def calculate_weekly_skimming():
