@@ -2,7 +2,7 @@ import logging
 import os
 from typing import Optional, Dict, List, Any
 from alpaca.trading.client import TradingClient
-from alpaca.trading.enums import OrderSide, TimeInForce
+from alpaca.trading.enums import OrderSide, TimeInForce, OrderClass
 from alpaca.trading.requests import (
     MarketOrderRequest,
     TakeProfitRequest,
@@ -10,7 +10,7 @@ from alpaca.trading.requests import (
 )
 
 logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
 
@@ -89,7 +89,7 @@ class OrderManager:
         take_profit: float,
         risk_pct: float = 0.01,
     ) -> Dict[str, Any]:
-        """Envoie un ordre d'achat au marché avec Stop-Loss et Take-Profit rattachés."""
+        """Envoie un ordre d'achat au marché de type BRACKET avec Stop-Loss et Take-Profit rattachés."""
         if not self.is_connected():
             return {
                 "success": False,
@@ -111,6 +111,7 @@ class OrderManager:
                 qty=qty,
                 side=OrderSide.BUY,
                 time_in_force=TimeInForce.GTC,
+                order_class=OrderClass.BRACKET,  # <-- INDISPENSABLE POUR LIER LE BRACKET
                 take_profit=TakeProfitRequest(
                     limit_price=round(take_profit, 2)
                 ),
@@ -118,7 +119,7 @@ class OrderManager:
             )
 
             order = self.client.submit_order(order_data=req)
-            logging.info(f"✅ Ordre envoyé avec succès sur {symbol_formatted}")
+            logging.info(f"✅ Ordre Bracket envoyé avec succès sur {symbol_formatted}")
 
             return {
                 "success": True,
