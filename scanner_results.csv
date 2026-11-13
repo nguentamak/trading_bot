@@ -1,5 +1,2 @@
 Ticker,Category,Price,RSI,Signal,Conviction_Score,Sortino,Calmar,Max_Drawdown_pct,SL_1.5xATR,TP_3.0xATR
-AMD,US_Large_Caps,585.3,57.4,BUY - Breakout 3J & Momentum,80,2.31,3.63,-37.73,518.38,719.13
-MO,US_Large_Caps,77.92,64.1,BUY - Breakout 3J & Momentum,90,1.93,3.02,-14.63,75.17,83.41
-ANET,US_Large_Caps,206.63,64.2,BUY - Breakout 3J & Momentum,80,1.6,2.22,-26.57,187.87,244.16
-CSX,US_Large_Caps,52.4,57.3,BUY - Breakout 3J & Momentum,90,2.97,3.92,-13.36,50.51,56.18
+CNC,US_Large_Caps,71.27,56.2,BUY - Breakout 3J & Momentum,80,2.39,2.95,-32.73,65.6,82.61
