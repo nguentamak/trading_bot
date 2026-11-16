@@ -1,2 +1,2 @@
 Ticker,Category,Price,RSI,Signal,Conviction_Score,Sortino,Calmar,Max_Drawdown_pct,SL_1.5xATR,TP_3.0xATR
-CNC,US_Large_Caps,71.27,56.2,BUY - Breakout 3J & Momentum,80,2.39,2.95,-32.73,65.6,82.61
+CNC,US_Large_Caps,74.77,60.5,BUY - Breakout 3J & Momentum,90,2.48,3.12,-32.73,69.25,85.81
