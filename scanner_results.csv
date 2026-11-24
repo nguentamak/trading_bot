@@ -1,3 +1,4 @@
 Ticker,Category,Price,RSI,Signal,Conviction_Score,Sortino,Calmar,Max_Drawdown_pct,SL_1.5xATR,TP_3.0xATR
-BAX,US_Large_Caps,26.59,58.8,BUY - Breakout 3J & Momentum,75,1.48,1.61,-29.02,25.06,29.65
-DOC,US_Large_Caps,20.01,58.3,BUY - Breakout 3J & Momentum,75,1.3,1.09,-18.12,19.26,21.51
+ABBV,US_Large_Caps,300.28,56.4,BUY - Breakout 3J & Momentum,80,1.89,2.13,-15.74,289.48,321.88
+GILD,US_Large_Caps,178.29,55.7,BUY - Breakout 3J & Momentum,80,2.7,2.04,-21.59,171.06,192.75
+PG,US_Large_Caps,172.47,62.1,BUY - Breakout 3J & Momentum,80,1.55,1.26,-15.52,167.52,182.37
