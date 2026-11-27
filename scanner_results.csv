@@ -1,7 +1,9 @@
 Ticker,Category,Price,RSI,Signal,Conviction_Score,Sortino,Calmar,Max_Drawdown_pct,SL_1.5xATR,TP_3.0xATR
-AAPL,US_Large_Caps,355.58,61.9,BUY - Breakout 3J & Momentum,85,1.43,2.08,-13.8,343.53,379.67
-BBY,US_Large_Caps,102.58,55.5,BUY - Breakout 3J & Momentum,80,1.67,1.2,-27.96,96.45,114.85
-DOC,US_Large_Caps,20.71,60.4,BUY - Breakout 3J & Momentum,75,1.4,1.18,-18.12,19.96,22.21
-HPQ,US_Large_Caps,31.15,58.9,BUY - Breakout 3J & Momentum,90,1.56,1.27,-28.92,29.32,34.81
-KIM,US_Large_Caps,26.05,59.6,BUY - Breakout 3J & Momentum,90,2.76,2.01,-16.19,25.4,27.34
-MDLZ,US_Large_Caps,67.81,57.5,BUY - Breakout 3J & Momentum,90,1.52,1.74,-13.17,65.78,71.86
+BBY,US_Large_Caps,104.18,57.5,BUY - Breakout 3J & Momentum,80,1.84,1.48,-26.06,98.17,116.21
+DOC,US_Large_Caps,20.96,61.6,BUY - Breakout 3J & Momentum,75,1.47,1.25,-18.12,20.24,22.4
+IVZ,US_Large_Caps,28.99,60.8,BUY - Breakout 3J & Momentum,75,1.0,1.01,-22.03,27.14,32.68
+MET,US_Large_Caps,101.07,57.4,BUY - Breakout 3J & Momentum,80,1.92,2.05,-17.46,97.11,108.99
+LUV,US_Large_Caps,47.21,60.2,BUY - Breakout 3J & Momentum,90,1.66,1.14,-33.49,44.73,52.16
+SBUX,US_Large_Caps,108.8,58.3,BUY - Breakout 3J & Momentum,90,1.63,1.72,-16.35,104.21,117.98
+VTRS,US_Large_Caps,20.2,55.7,BUY - Breakout 3J & Momentum,80,3.72,5.02,-18.97,19.42,21.76
+V,US_Large_Caps,429.56,55.6,BUY - Breakout 3J & Momentum,80,1.84,1.72,-17.18,416.01,456.65
